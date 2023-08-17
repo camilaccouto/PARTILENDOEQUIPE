@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <!-- Meta tags Obrigatórias -->
@@ -50,7 +61,101 @@
         </form>
       </div>
     </nav>
-    
+    <div class="container_form">
+        <h1>Formulário de Cadastro</h1>
+        <form class="form" action="#" method="post">
+            
+            <div class="form_grupo">
+                <label for="nome completo" class="form_label">Nome Completo</label>
+                <input type="text" name="nome completo" class="form_input" id="nome completo" placeholder="Nome completo" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="e-mail" class="form_label">Email</label>
+                <input type="e-mail" name="e-mail" class="form_input" id="e-mail" placeholder="digite seu e-mail" required>
+            </div>
+            <div class="form_grupo">
+                <label for="senha" class="form_label">Senha</label>
+                <input type="senha" name="senha" class="form_input" id="senha" placeholder="crie uma senha" required>
+            </div>
+
+        </div>
+          
+        <div class="form_grupo">
+            <label for="CPF" class="form_label">CPF</label>
+            <input type="text" name="CPF" class="form_input" id="CPF" placeholder=" Seu CPF" required>
+        </div>
+            
+            <div class="form_grupo">
+                <label for="datanascimento" class="form_label">Data de Nascimento</label>
+                <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+            </div>        
+            <div class="form_grupo">
+                
+                <label for="seuestado" class="text">Selecione seu estado</label>
+                <select name="seuestado" class="dropdown" required>
+                    
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="Acre" class="form_select_option">Acre</option>
+                    <option value="Alagoas" class="form_select_option">Alagoas </option>
+                    <option value="Amapá" class="form_select_option">Amapá</option>                    
+                    <option value="Amazonas" class="form_select_option">Amazonas</option>                    
+                    <option value="Bahia" class="form_select_option">Bahia</option>
+                    <option value="Brasília" class="form_select_option">Brasília</option>
+                    <option value="Ceará" class="form_select_option">Ceará</option>
+                    <option value="Espírito Santo" class="form_select_option">Espírito Santo</option>
+                    <option value="Goiás" class="form_select_option">Goiás</option>
+                    <option value="Maranhão" class="form_select_option">Maranhão</option>
+                    <option value="Mato Grosso" class="form_select_option">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul" class="form_select_option">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais" class="form_select_option">Minas Gerais</option>
+                    <option value="Pará" class="form_select_option">Pará</option>
+                    <option value="Paraíba" class="form_select_option">Paraíba</option>
+                    <option value="Paraná" class="form_select_option">Paraná</option>
+                    <option value="Pernanbuco" class="form_select_option">Pernanbuco</option>
+                    <option value="Piauí" class="form_select_option">Piauí</option>
+                    <option value="Rio de Janeiro" class="form_select_option">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte" class="form_select_option">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul" class="form_select_option">Rio Grande do Sul</option>
+                    <option value="Rondônia" class="form_select_option">Rondônia</option>
+                    <option value="Roraima" class="form_select_option">Roraima</option>
+                    <option value="Santa Catarina" class="form_select_option">Santa Catarina</option>
+                    <option value="São Paulo" class="form_select_option">São paulo</option>
+                    <option value="Sergipe" class="form_select_option">Sergipe</option>
+                    <option value="Tocantins" class="form_select_option">Tocantins</option>
+
+
+                </select>
+            </div>
+            <div class="form_grupo">
+                <span class="legenda">Selecione:</span>
+                
+                <div class="radio-btn">
+                    <input type="radio" class="form_new_input" id="doador" name="selecione" value="Doador" required="required">
+                    <label for="doador" class="radio_label form_label"> <span class="radio_new_btn"></span> Doador</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" class="form_new_input" id="destinatário" name="selecione" value="Destinatário" required="required">
+                    <label for="destinatário" class="radio_label form_label"> <span class="radio_new_btn"></span> Destinatário</label>
+                </div>
+
+        </select>
+    </div>
+    <div class="form_grupo">
+        <span class="legenda">É uma instituição educacional?</span>
+        
+        <div class="radio-btn">
+            <input type="radio" class="form_new_input" id="sim" name="selecione" value="sim" required="required">
+            <label for="sim" class="radio_label form_label"> <span class="radio_new_btn"></span> Sim</label>
+        </div>
+        <div class="radio-btn">
+            <input type="radio" class="form_new_input" id="não" name="selecione" value="não" required="required">
+            <label for="não" class="radio_label form_label"> <span class="radio_new_btn"></span> Não</label>
+        </div>
+    </div>
+                
+        </form>
+</div><!--container_form-->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
