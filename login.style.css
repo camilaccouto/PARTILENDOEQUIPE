@@ -14,12 +14,12 @@ body{
 .Login{
     background: rgba(173, 238, 247, 0.753);
     border-radius: 20px;
-    width: 270px;
+    width: 350px;
     padding: 50px;
 }
 .Login h2{
-   margin-bottom: 20px;
-   font-size: 35px;
+   margin-bottom: 50px;
+   font-size: 50px;
     color:  #EC116F;
    text-align: center;
 }
@@ -34,9 +34,131 @@ body{
     border-radius: 5px;
     background-color:#F3D122;
     border-bottom:1px solid #fff;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
  .Login .box-user label{
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    color: #000000;
+    font-family: Montserrat, Montserrat;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
  }
+ .Login .box-user input:focus~label,
+ .Login .box-user input:valid~label
+ {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+ }
+ .forget{
+    font-size: 11px;
+    padding: 10px 0px;
+    color: #000;
+    float: right;
+ }
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 30px 67px;
+    color: #EC116F;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+}
+.btn:hover{
+    background: #EC116F;
+    border-radius: 15px;
+    color: #11BCE1;
+}
+.btn span{
+    position: absolute;
+    display: block;
+}
+.btn span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,transparent,#EC116F);
+    animation: btn1 1s linear infinite;
+}
+@keyframes bnt1{
+    0%{
+         left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+.btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#EC116F);
+    animation: btn2 1s linear infinite;
+    animation-delay: .20s;
+}
+@keyframes bnt2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top:100%;
+    }
+}
+.btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg,transparent,#EC116F);
+    animation: btn3 1s linear infinite;
+    animation-delay: .45s;
+}
+@keyframes bnt3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+.btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg,transparent,#EC116F);
+    animation: btn4 1s linear infinite;
+    animation-delay: .70s;
+}
+@keyframes bnt4{
+    0%{
+        bottom:  -100%; 
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
+@media (max-width: 352px){
+    .Login{
+        width: 90%;
+    }
+}
+}
