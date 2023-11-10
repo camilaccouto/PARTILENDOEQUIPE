@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="#estilo.css">
+
+  <title>Catálogo de livros</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #search-container {
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px 15px;
+    }
+
+    #search-box {
+      border: none;
+      padding: 5px;
+      width: 250px;
+      border-radius: 20px;
+    }
+
+    #search-icon {
+      color: #EC116F;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .search-icon-circle {
+      background-color: #EC116F;
+      border-radius: 48%;
+      padding: 3px;
+      display: inline-block;
+    }
+
+    .card-deck {
+      margin: auto;
+      width: 100%;
+      left: 100px;
+    }
+
+    .nav-item {
+      margin: auto;
+      font-size: 20px;
+      left: auto;
+    }
+
+    #conteudoNavbarSuportado {
+      height: 10px;
+      padding-bottom: 20px;
+    }
+    #cardespaco{
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    #cardespaco1{
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 30px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #11bce1; overflow-x: hidden;">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fcc018;">
+    <a class="navbar-brand" href="#"><img src="Partilendo_-_Compartilhando_Conhecimento__2_-removebg-preview 2.png"
+        width="120" height="80" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto" id="conteudoNavbarSuportado">
+        <li class="nav-item active">
+          <a class="nav-link" href="paginainicial.html">Login <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Catálogo de doações
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="catalogodelivros.html"> Catálogo de livros</a>
+            <a class="dropdown-item" href="CADASTRO.HTML"> Formulário de Doação 
+            <a class="dropdown-item" href="contato.html"> Contato
+                
+                  
+
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Ajuda</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Suporte</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Gênero
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href=""> Fantasia</a>
+            <a class="dropdown-item" href=""> Infantil</a>
+            <a class="dropdown-item" href=""> Juvenil</a>
+            <a class="dropdown-item" href=""> Ficção científica</a>
+            <a class="dropdown-item" href=""> Didáticos</a>
+            <a class="dropdown-item" href=""> Paradidáticos</a>
+            </a>
+        </li>
+        </li>
+    </div>
+    <div id="search-container">
+      <input type="text" id="search-box" placeholder="Pesquisar">
+      <span class="search-icon-circle">
+        <span id="search-icon">🔍</span>
+      </span>
+    </div>
+  </nav>
+
+
+  <!--Aqui estão os cards-->
+  <div class="card-deck d-flex justify-content: center" id="cardespaco">
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="o menino que descobriu o vento.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">O menino que descobriu o vento</h5>
+        <p class="card-text">Sempre esforçando-se para adquirir conhecimentos diversificados, um jovem de Malawi se cansa de assistir todos os colegas de seu vilarejo passando por dificuldades e começa a desenvolver uma inovadora turbina de vento.
+          . Este conteúdo é um pouco maior.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="chapeuzinho amarelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body ">
+        <h5 class="card-title">Chapeuzinho Amarelo</h5>
+        <p class="card-text">Chapeuzinho Amarelo conta a história de uma garotinha amarela de medo. Tinha medo de tudo, até do medo de ter medo. Era tão medrosa que já não se divertia, não brincava, não dormia, não comia.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="coraline.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Coraline</h5>
+        <p class="card-text">O livro Coraline conta a história de uma menina que se muda com os seus pais para um casarão, onde existem vários “apartamentos.” Ela leva uma vida muito monótona e não gosta nada disso. Ela se define como uma aventureira e exploradora e detesta ficar sem fazer nada.
+
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="malala.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Malala</h5>
+        <p class="card-text">Malala Yousafzai quase perdeu a vida por querer ir para a escola. Ela nasceu no vale do Swat, no Paquistão, uma região de extraordinária beleza, cobiçada no passado por conquistadores como Gengis Khan e Alexandre, o Grande, e protegida pelos bravos guerreiros pashtuns – os povos das montanhas.
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="meu pe de laranja lima.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Meu pé de laranja lima</h5>
+        <p class="card-text">Malala Yousafzai quase perdeu a vida por querer ir para a escola. Ela nasceu no vale do Swat, no Paquistão, uma região de extraordinária beleza, cobiçada no passado por conquistadores como Gengis Khan e Alexandre, o Grande, e protegida pelos bravos guerreiros pashtuns – os povos das montanhas.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Coluna 2 card-->
+
+
+  <div class="card-deck d-flex justify-content: center" id="cardespaco1">
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="o jardim secreto.webp" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">O jardim secreto</h5>
+        <p class="card-text">O Jardim Secreto conta a história de Mary Lennox, uma menina solitária que perde os pais em um surto de cólera na Índia e, como consequência, é enviada para uma mansão em Yorkshire para morar com seu tio misterioso.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="o livro do adolescente.jpg" alt="Imagem de capa do card">
+      <div class="card-body ">
+        <h5 class="card-title">O livro do adolescente</h5>
+        <p class="card-text">Este livro trata de maneira agradável temas que fazem parte da vida dos adolescentes: cidadania, autoestima, sexualidade, política, globalização, etc.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="o pequeno principe preto.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">O pequeno príncipe preto</h5>
+        <p class="card-text">Em um minúsculo planeta, vive o Pequeno Príncipe Preto. Além dele, existe apenas uma árvore Baobá, sua única companheira. Quando chegam as ventanias, o menino viaja por diferentes planetas, espalhando o amor e a empatia. O texto é originalmente uma peça infantil que já rodou o país inteiro.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="o menino maluqinho.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">O menino maluquinho</h5>
+        <p class="card-text">A obra retrata a história de um menino “ Tirava dez em todas as matérias, mas era zero em comportamento”. Mesmo sendo tão travesso, o menino maluquinho como é chamado, é um garoto muito inteligente, amigo, alegre, que adora usar a sua imaginação.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card" style="max-width: 20rem;">
+      <img class="card-img-top" src="menina bonita do laço de fita.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Menina bonita do laço de fita</h5>
+        <p class="card-text">Uma linda menina negra desperta a admiração de um coelho branco, que deseja ter uma filha tão pretinha quanto ela. Cada vez que ele lhe pergunta qual o segredo de sua cor, ela inventa uma história. O coelho segue todos os “conselhos” da menina, mas continua branco.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+  <!--Finaliza os cards-->
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
